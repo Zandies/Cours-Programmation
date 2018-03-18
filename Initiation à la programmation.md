@@ -19,21 +19,22 @@ figure{
 	width: 100px;
 	border-radius: 5px;
 }
-.questions, .informations{
+.questions, .exclamations, .informations{
 	display: flex;
 	justify-content: center;
 	align-items: left;
 }
 
-.user_question, .user_information{
+.user_question, .user_exclamation, .user_information{
 	display: flex;
 	flex-direction: row;
+	padding: 5px;
 	justify-content: center;
 	align-items: center;
 	border-radius: 2px;
-	margin: -10px;
 	width: 90%;
 	color: #fff;
+	text-align: center;
 }
 
 .user_question{
@@ -41,21 +42,53 @@ figure{
 	border-left: 5px solid #2980b9;
 }
 
-.user_information{
+.user_exclamation{
 	background-color: #EB323288;
 	border-left: 5px solid #EB3232;
+}
+
+.user_information{
+	background-color: #F39C1288;
+	border-left: 5px solid #F39C12;
 }
 
 .user_question img{
 	width: 40px;
 }
-.user_question p, .user_information p{
+.user_question p, .user_exclamation p, .user_exclamation p a, .user_information p, .user_information p a, .user_question p a{
 	color: white;
     padding: 15px 0px 0px 5px;
+}
+.user_information p a, .user_exclamation p a, .user_question p a{
+	text-decoration: underline;
+}
+#ArnGeek{
+	display: flex;
+	align-items: center;
+	background-color: #0095d3;
+	width: 225px;
+}
+#ArnGeekImg{
+	width: 75px;
+	margin: 5px;
+	height: 66px;
+}
+#ArnGeekText{
+	margin-top: 15px;
+	color: #fff;
+}
+#ArnGeekText strong{
+	font-size: 20px;
+}
+#tableau_langages{
+	display: flex;
+	align-content: center;
+	justify-content: center;
 }
 </style>
 
 <img src="img/ARN_logoSite.png">
+<!-- <div id="ArnGeek"><img src="img/ARNGeek.png" id="ArnGeekImg" alt="ARNGEEK"><p id="ArnGeekText">Club de <strong>Programmation</strong></p></div> -->
 
 Cours d'initiation à la programmation
 =====================================
@@ -63,12 +96,22 @@ Cours d'initiation à la programmation
 Nicolas Gallis
 Lucas Placentino
 
+<!-- <div class="exclamations">
+	<div class="user_exclamation">
+		<img src="img/exclamation.png" alt="alert"><p>Ce cours est destiné aux personnes souhaitant s'initier à la programmation informatique. Tout le code de cette page est disponible sur<a href="https://github.com/Zandies/Cours-Programmation" target="_blank">GitHub</a>.</p>
+	</div>
+</div> -->
 <div class="informations">
 	<div class="user_information">
-		<img src="img/exclamation.png" alt="alert"><p>Ce cours est destiné aux personnes souhaitant s'initier à la programmation informatique. Tout le code qui m'a servi à coder cette page est disponible sur GitHub</p>
+		<img src="img/info.png" alt="alert"><p>Ce cours est destiné aux personnes souhaitant s'initier à la programmation informatique. Tout le code de cette page est disponible sur<a href="https://github.com/Zandies/Cours-Programmation" target="_blank">GitHub</a>.</p>
 	</div>
 </div>
-
+<!-- <div class="questions">
+	<div class="user_question">
+		<img src="img/question.png" alt="alert"><p>Ce cours est destiné aux personnes souhaitant s'initier à la programmation informatique. Tout le code de cette page est disponible sur<a href="https://github.com/Zandies/Cours-Programmation" target="_blank">GitHub</a>.</p>
+	</div>
+</div>
+ -->
 ### Sommaire
 
 * [C'est quoi la programmation ?](#prog)
@@ -100,7 +143,7 @@ Lucas Placentino
 	
 	Voici le premier vrai dilemme : Quel langage faut-il choisir ?
 	Tout cela dépend de ce que vous voulez faire, je m'explique, si vous préferez coder des sites web, optez pour l'<strong style="color:#e74c3c;">HTML/CSS</strong>. Si vous préfèrez le monde des jeux vidéos<sup>(1)</sup>, le choix est beaucoup plus vaste: <strong style="color:#f1c40f;">C/C++, Python, Java, C#</strong>... Sinon, vous pouvez développez des applications IOS<sup>(2)</sup> avec le langage <strong style="color:#e67e22;">Swift</strong> ou l'<strong style="color:#e67e22;">Objective-C</strong>. Si vous êtes plutôt du genre à automatiser des tâches sur votre PC, il y'a le <strong style="color:#2ecc71;">Shell</strong>. 
-	En bref, il existe des centaines de langages différents, pour tous les goûts, en cherchant vous trouverez sûrement celui qui vous parle :wink:
+	En bref, il existe des centaines de langages différents, pour tous les goûts, en cherchant un peu vous trouverez sûrement celui qui vous parle :wink:
 	<figure id="example_code">
 		<img src="img/minecraft">
 		<figcaption>(1) Minecraft, le jeu vidéo développé en Java</figcaption>
@@ -130,4 +173,33 @@ Lucas Placentino
 		<figure id="swift">
 			<img src="img/swift.png" />
 			<figcaption>Swift</figcaption>
+		</figure>
+
+		Sinon, il existe des logiciels comme Scratch ou Swift Playground qui permet d'apprendre le développement en utilisant des "blocs".
+		<figure id="scratch">
+			<img src="img/scratch.png" />
+			<figcaption>Le logiciel Scratch</figcaption>
+		</figure>
+
+		<div class="user_question">
+			<img src="img/question.png" alt="alert"><p>J'ai vu sur Internet que pour développer un jeu comme World Of Warcraft, il fallait apprendre le C++, je crois que c'est celui là que je vais prendre ! Ok ? Je peux ?</p>
+			</div>
+		</div>
+
+		Bien sûr que vous pouvez, mais attention, il faudra vous accrochez, sinon vous serez dégoûtés par le développement, car certains concepts sont assez difficiles à comprendre, et si vous commencez directement avec un language très puissant maisplus difficile vous riquez de vous perdre et de ne plus rien comprendre. Je vous conseille donc de prendre un language plus "facile" mais rien ne vous empêche d'apprendre un languague plus dur.
+		
+		<div id="tableau_langages">
+
+		<p style="color:#3ae374;">Plus faciles</p>|<p style="color:#ff3838;">Plus durs</p>
+		-:|:-
+		Python|C++
+		HTML/CSS|Java
+		PHP|C#
+		Swift|Assembleur
+		...|...
+
+		</div>
+		<figure id="scratch">
+			<img src="img/lequel_choisir_diagramme.png" alt="">
+			<figcaption>Un diagramme pour aider dans le choix d'un langage</figcaption>
 		</figure>
