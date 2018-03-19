@@ -126,7 +126,7 @@ Lucas Placentino
 1. C'est quoi la programmation ? <a id="prog"></a>
 
 	La programmation, c'est juste communiquer avec un ordinateur pour lui demander d'effectuer des actions pour nous. Bien que cela puisse sembler difficile d'un premier abord, la programmation est un univers accessible à n'importe qui, pourvu qu'on soit motivé. C'est comme parler dans une autre langue, on doit retenir des règles pour ensuite les appliquer et ainsi se faire comprendre par les personnes qui la parlent.
-	Programmer, c'est créer des programmes. Il y'en a partout, aussi bien sur votre PC que sur votre smartphone en passant par les consoles et les appareils photos. 
+	Programmer, c'est créer des programmes. Il y'en a partout, aussi bien sur votre PC que sur votre smartphone en passant par les consoles et les appareils photos. Dites vous que tout ce qu'il y'a sur votre PC est programme; Google Chrome, Skyrim, Word, Photoshop, League Of Legends, le bloc-notes de Windows, Skype...
 
 	1. Pourquoi apprendre la programmation ? <a id="pk"></a>
 
